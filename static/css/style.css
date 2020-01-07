@@ -1,5 +1,5 @@
 body{
-    /*TODO fix background*/
+    overflow-x: scroll;
     background-image: url("background.jpg");
     background-color: white;
 }
@@ -33,7 +33,7 @@ header{
     margin-top: 10px;
     position: fixed;
     background-color: pink;
-    padding: 10px;
+    padding: 10px 12px;
     margin-left: 0px;
     font-family: "Lucida Console", Monaco, monospace;
     text-align: center;
@@ -43,19 +43,22 @@ header{
 }
 
 .menu{
-    margin-left: 323px;
+    margin-left: 327px;
     margin-top: 25px;
     position: fixed;
     background-color: pink;
     list-style-type: none;
     border: groove;
     border-color: #778899;
+    min-width: 779px;
 }
 
 li {
   /* Position of options in header */
   float: left;
   background-color: pink;
+  
+  display: inline-block;
 }
 
 li a {
@@ -73,14 +76,31 @@ li a:hover {
   opacity: 0.5;
 }
 
+.instaFrame{
+  margin-top: 0px;
+  float: left;
+  border: none;
+  padding: 20px;
+  height: 500px;
+  width: 500px;
+}
 
 div.infoBox{
-    margin: 100px;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
     overflow: auto;
     border: groove;
     border-color: #778899;
-    padding: 2px;
+    padding: 2px 2px;
     background-color: pink;
     color: white;
     font-size: 13px;
+}
+
+img.productLogo{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
 }
