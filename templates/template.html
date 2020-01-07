@@ -1,61 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-* {
-  box-sizing: border-box;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  /*height: 300px;  Should be removed. Only for demonstration */
-  color: pink;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
     <title>Sakura Media</title>
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
-
   </head>
   <body>
-    <div class="row">
-        <div class="column">
-          <h1 class="logo"><img src="/static/images/sm.jpg" height="50" width="50">
-          Sakura Media</h1>
-          <strong><nav>
-            <ul class="menu">
-              <li><a href="{{ url_for('home') }}">Home</a></li>
-              <li><a href="{{ url_for('about') }}">About / Careers</a></li>
-              <li><a href="{{ url_for('hobbies') }}">Metro Hobbies by Sakura Media</a></li>
-              <li><a href="{{ url_for('location') }}">Location & Contact</a></li>
-            </ul>
-          </nav></strong>
-        </div>
-    
-      <div class="column">
-        <div class=infoBox>
-            <h2 style="color:#D81F5C;">Hey there!</h2>
-            <h3>We have many anime figurines, manga, merchandise, and even model kits just for you!</h3>
-            <h3 class="divider">❀~~~~~~~~~~~~~❀~~~~~~~~~~~~~❀</h3>
-            <h3>Follow us to see our latest arrivals! </h3>
-            <h3> <a class="link" href="https://www.facebook.com/sakuramediavancouver/">Facebook</a>, 
-            <a class="link" href="https://www.instagram.com/sakuramediametro/?hl=en">Instagram</a> (@sakuramediametro),
-            and <a class="link">WeChat</a>.</h3>
-            <h3>...Or visit us in person! We are located at <a class="link" href="https://www.google.com/maps/place/Sakura+Media/@49.2274281,-123.001896,17z/data=!3m1!4b1!4m5!3m4!1s0x5486764f1449d2bd:0x84c0ec5044b16812!8m2!3d49.2274281!4d-122.9997073">
-                Metrotown Metropolis</a>, the biggest mall in BC. See you there!</h3>
-        </div>
-      </div>
-    </div>
+      <header><h1 class="logo"><img src="/static/images/sm.jpg" height="50" width="50">
+        Sakura Media</h1>
+          <ul class="menu">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About/Careers</a></li>
+            <li><a href="{{ url_for('hobbies') }}">Metro Hobbies by Sakura Media</a></li>
+            <li><a href="{{ url_for('location') }}">Location & Contact</a></li>
+          </ul>
+        </header>
 
     {% block content %}
     {% endblock %}

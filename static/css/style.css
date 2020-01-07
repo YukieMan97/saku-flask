@@ -10,6 +10,11 @@ h2, h3, p, a{
     color: #708090; 
 }
 
+header{
+  position: fixed;
+  top: 0px;
+}
+
 .divider{
     text-align: center;
     font-family: "Lucida Console", Monaco, monospace;
@@ -25,8 +30,9 @@ h2, h3, p, a{
 
 /* Sakura Media Logo */
 .logo{
+    margin-top: 10px;
+    position: fixed;
     background-color: pink;
-    margin-top: 0px;
     padding: 10px;
     margin-left: 0px;
     font-family: "Lucida Console", Monaco, monospace;
@@ -37,14 +43,19 @@ h2, h3, p, a{
 }
 
 .menu{
-    align-self: flex-end;
+    margin-left: 323px;
+    margin-top: 25px;
+    position: fixed;
     background-color: pink;
+    list-style-type: none;
+    border: groove;
+    border-color: #778899;
 }
 
-ul {
-  list-style-image: <i class="fas fa-fan"></i>;
-  border: groove;
-  border-color: #778899;
+li {
+  /* Position of options in header */
+  float: left;
+  background-color: pink;
 }
 
 li a {
@@ -62,19 +73,14 @@ li a:hover {
   opacity: 0.5;
 }
 
-.active {
-  /* colour current tab on header */
-  background-color: #red;
-}
 
 div.infoBox{
+    margin: 100px;
     overflow: auto;
     border: groove;
     border-color: #778899;
-    margin-top: 4px;
     padding: 2px;
     background-color: pink;
     color: white;
     font-size: 13px;
-    height: 299px;
 }
