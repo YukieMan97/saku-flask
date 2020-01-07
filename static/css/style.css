@@ -1,3 +1,4 @@
+/* Template */
 body{
     overflow-x: scroll;
     background-image: url("background.jpg");
@@ -76,13 +77,19 @@ li a:hover {
   opacity: 0.5;
 }
 
+/* Home */
+
 .instaFrame{
   display: block;
-  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
   height: 500px;
   width: 70%;
-  border: none;
-  padding: 20px;
+  border: groove;
+  border-color: #778899;
+  padding: 0px;
 }
 
 div.infoBox{
@@ -124,4 +131,44 @@ img.productLogo{
   width: 100px;
   height: 100px;
   padding: 10px;
+}
+
+/* Location */
+div.locationBox{
+    margin-top: 75px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    overflow: auto;
+    border: groove;
+    border-color: #778899;
+    padding: 2px 2px;
+    background-color: pink;
+    color: white;
+    font-size: 13px;
+}
+.map-container{
+  padding: 5px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 850px;
+  width: 85%;
+  background-color: pink;
+  border: groove;
+  border-color: #778899;
+}
+
+.map{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 700px;
+  width: 80%;
+  border: none;
+}
+
+/* footer */
+footer{
+  bottom: 0px;
 }

@@ -8,6 +8,33 @@
         {%extends "template.html" %}
         {% block content %}
         
+        <div class=locationBox>
+          <h2 style="color:#D81F5C;">Sakura Media at Metrotown Metropolis</h2>
+          <h3>Have any questions? Feel free to call us at...</h3>
+          <h3>Sakura Media: <a class=link>(604) 419-8824</a></h3>
+          <h3>Metro Hobbies: <a class=link>(604) 565-7777</a></h3>
+          <h3 class="divider">❀~~~~~~~~~~~~~❀~~~~~~~~~~~~~❀</h3>
+          <h3>Follow us to see our latest arrivals! </h3>
+          <h3> <a class="link" href="https://www.facebook.com/sakuramediavancouver/">Facebook</a>, 
+          <a class="link" href="https://www.instagram.com/sakuramediametro/?hl=en">Instagram</a> (@sakuramediametro),
+            and <a class="link">WeChat</a>.</h3>
+        </div>
+        
+        <div class="map-container">
+            <h3>Sakura Media</h3>
+            <iframe class="map" 
+                src="https://www.google.com/maps/place/Sakura+Media/@49.2274281,-122.9997073,15z/data=!4m5!3m4!1s0x0:0x84c0ec5044b16812!8m2!3d49.2274281!4d-122.9997073"
+                name="iframe_a"></iframe>
+        </div>
+        
+        <div class="map-container">
+            <h3>Metro Hobbies</h3>
+            <iframe class="map" 
+                src="https://www.google.com/maps/place/Metro+Hobbies/@49.2255063,-123.0016406,17z/data=!3m1!4b1!4m5!3m4!1s0x54867788dcae5a71:0xb988c548cfab475!8m2!3d49.2255028!4d-122.9994519"
+                name="iframe_a"></iframe>
+        </div>
+        
+        
          {% endblock%}
     </body>
 </html>
