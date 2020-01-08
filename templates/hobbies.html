@@ -2,11 +2,26 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Metro Hobbies By Sakura Media</title>
     </head>
     <body>
         {%extends "template.html" %}
         {% block content %}
+        
+        <img class="metroHobbImg" src="/static/images/metrohobs.jpg">
+        
+        <div class="infoBox">
+          <h2 style="color:#D81F5C;">Metro Hobbies By Sakura Media!</h2>
+          <h3>Metro Hobbies is our second store that has a greater variety in model kits.
+          A few examples include <a class="examples">Gundam</a>, <a class="examples">One Piece</a>,
+          <a class="examples">PatLabor</a>, <a class="examples">Evangelion</a>, and many more!</h3>
+          <h3 class="divider">❀~~~~~~~~~~~~~❀~~~~~~~~~~~~~❀</h3>
+          <h3>Follow us to see our latest arrivals! </h3>
+          <h3> <a class="link" href="https://www.facebook.com/metrohobbiesbysakura/">Facebook</a> and
+          <a class="link" href="https://www.instagram.com/metrohobbiesbysakura/">Instagram</a> (@sakuramediametro).</h3>
+        </div>
+        
+        <iframe class="instaFrame" 
+            src="https://www.instagram.com/metrohobbiesbysakura/" name="iframe_a"></iframe>
         
          {% endblock%}
     </body>

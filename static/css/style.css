@@ -5,7 +5,7 @@ body{
     background-color: white;
 }
 
-h2, h3, p, a{
+h1, h2, h3, p, a{
     text-align: center;
     font-family: "Lucida Console", Monaco, monospace;
     color: #708090; 
@@ -101,7 +101,7 @@ div.infoBox{
     border: groove;
     border-color: #778899;
     padding: 2px 2px;
-    background-color: pink;
+    background-color: #FFD2D2;
     color: white;
     font-size: 13px;
 }
@@ -112,12 +112,12 @@ div.infoBox{
             
 /* Create three equal columns that floats next to each other */
 .column {
-  background-color: #aaa;
+  background-color: #D8CACA;
   float: left;
   width: 50%;
-  padding: 10px;
-  /*height: 300px;  Should be removed. Only for demonstration */
-  color: pink;
+  height: 225px;
+  color: white;
+  border: dashed;
 }
 
 /* Clear floats after the columns */
@@ -128,9 +128,42 @@ div.infoBox{
 }
 
 img.productLogo{
-  width: 100px;
-  height: 100px;
-  padding: 10px;
+  width: 150px;
+  height: 150px;
+  padding: 8px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  float: left;
+}
+/*
+.productInfo{
+  text-align: left;
+  overflow: auto;
+  width: 50%;
+} */
+
+.highlight{
+  font-family: "Lucida Console", Monaco, monospace;
+  color: #D81F5C;
+}
+
+/*Metro Hobbies*/
+.metroHobbImg{
+    float: left;
+    margin-top: 95px;
+    margin-right: auto;
+    margin-left: 20px;
+    width: 40%;
+    border: groove;
+    border-color: #778899;
+    
+}
+
+.examples{
+    text-align: center;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: #D81F5C;
+    font-size: 14px;
 }
 
 /* Location */
@@ -143,7 +176,7 @@ div.locationBox{
     border: groove;
     border-color: #778899;
     padding: 2px 2px;
-    background-color: pink;
+    background-color: #FFD2D2;
     color: white;
     font-size: 13px;
 }
@@ -154,7 +187,7 @@ div.locationBox{
   margin-left: auto;
   height: 850px;
   width: 85%;
-  background-color: pink;
+  background-color: #FFD2D2;
   border: groove;
   border-color: #778899;
 }
@@ -170,5 +203,5 @@ div.locationBox{
 
 /* footer */
 footer{
-  bottom: 0px;
+  margin-bottom: 0px;
 }
