@@ -111,20 +111,32 @@ div.infoBox{
 }
             
 /* Create three equal columns that floats next to each other */
-.column {
-  background-color: #D8CACA;
+.firstCol {
   float: left;
-  width: 50%;
-  height: 225px;
-  color: white;
-  border: dashed;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    border: groove;
+    border-color: #778899;
+    padding: 2px 2px;
+    background-color: #FFD2D2;
+    font-size: 14px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.secondCol {
+    float: right;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    border: groove;
+    border-color: #778899;
+    padding: 2px 2px;
+    background-color: #FFD2D2;
+    font-size: 14px;
 }
 
 img.productLogo{
@@ -135,12 +147,6 @@ img.productLogo{
   margin-bottom: 25px;
   float: left;
 }
-/*
-.productInfo{
-  text-align: left;
-  overflow: auto;
-  width: 50%;
-} */
 
 .highlight{
   font-family: "Lucida Console", Monaco, monospace;
